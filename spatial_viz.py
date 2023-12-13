@@ -54,3 +54,15 @@ def spatial_viz(df, shp_file=SHAPES_FILE, hover_name=None, hover_data=None, colo
     fig.show()
 
 # spatial_viz(df, SHAPES_FILE, 'Injury Severity', ['Weather', 'Surface Condition', 'Light','Driver Substance Abuse','Driver At Fault'], 'Injury Severity', "Crashes in the County of Montgomery, State of Maryland, United States")
+
+# temp_df = df[df['Municipality'] == 'CHEVY CHASE VILLAGE']
+# temp_df.dropna(subset=['Municipality'], inplace=True)
+
+# df.dropna(subset=['Municipality'], inplace=True)
+# spatial_viz(
+#     df=df,
+#     hover_name='Municipality',
+#     hover_data='Latitude',
+#     color_column='Municipality',
+#     title="Clusters of Crashes in Chevy Chase, MD"
+# )
